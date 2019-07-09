@@ -2,19 +2,23 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="307" started-at="2019-07-09T06:29:36Z" finished-at="2019-07-09T06:29:37Z">
+  <suite name="Default suite" duration-ms="4920" started-at="2019-07-09T09:28:05Z" finished-at="2019-07-09T09:28:10Z">
     <groups>
       <group name="cucumber">
-        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.framework.helper.TestRunner@1794d431]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.framework.helper.TestRunner@77cd7a0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test name="Default test" duration-ms="307" started-at="2019-07-09T06:29:36Z" finished-at="2019-07-09T06:29:37Z">
+    <test name="Default test" duration-ms="4920" started-at="2019-07-09T09:28:05Z" finished-at="2019-07-09T09:28:10Z">
       <class name="com.framework.helper.TestRunner">
-        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.framework.helper.TestRunner@1794d431]" name="setUpClass" is-config="true" duration-ms="68" started-at="2019-07-09T06:29:36Z" finished-at="2019-07-09T06:29:37Z">
+        <test-method status="PASS" signature="initializeBrowser()[pri:0, instance:com.framework.helper.TestRunner@77cd7a0]" name="initializeBrowser" is-config="true" duration-ms="4465" started-at="2019-07-09T09:28:05Z" finished-at="2019-07-09T09:28:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:com.framework.helper.TestRunner@77cd7a0]" name="setUpClass" is-config="true" duration-ms="41" started-at="2019-07-09T09:28:09Z" finished-at="2019-07-09T09:28:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.framework.helper.TestRunner@1794d431]" name="runScenario" duration-ms="140" started-at="2019-07-09T06:29:37Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-07-09T06:29:37Z">
+        <test-method status="PASS" signature="runScenario(io.cucumber.testng.PickleEventWrapper, io.cucumber.testng.CucumberFeatureWrapper)[pri:0, instance:com.framework.helper.TestRunner@77cd7a0]" name="runScenario" duration-ms="134" started-at="2019-07-09T09:28:09Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2019-07-09T09:28:09Z">
           <params>
             <param index="0">
               <value>
@@ -30,10 +34,14 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runScenario -->
-        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.framework.helper.TestRunner@1794d431]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2019-07-09T06:29:37Z" finished-at="2019-07-09T06:29:37Z">
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:com.framework.helper.TestRunner@77cd7a0]" name="tearDownClass" is-config="true" duration-ms="1" started-at="2019-07-09T09:28:09Z" finished-at="2019-07-09T09:28:09Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.framework.helper.TestRunner@77cd7a0]" name="tearDown" is-config="true" duration-ms="152" started-at="2019-07-09T09:28:09Z" finished-at="2019-07-09T09:28:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.framework.helper.TestRunner -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

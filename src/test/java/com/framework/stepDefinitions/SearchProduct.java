@@ -1,13 +1,20 @@
 package com.framework.stepDefinitions;
 
+import com.framework.helper.TestRunner;
+import com.framework.pageObjects.HomePage;
+
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class SearchProduct {
 
+	HomePage hp;
+	
 	@Given("User is logged in with email {string} and password {string}")
 	public void user_is_logged_in_with_email_and_password(String string, String string2) {
+		System.out.println(TestRunner.getDriver());
+		hp = new HomePage(TestRunner.getDriver());
 	}
 
 	@Given("User is at homepage {string}")
