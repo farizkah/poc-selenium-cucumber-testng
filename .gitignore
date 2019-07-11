@@ -2,4 +2,4 @@ target
 .classpath
 .project
 .test-output
-.settings/
+.settings/./test-output/

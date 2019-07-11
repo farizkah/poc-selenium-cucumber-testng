@@ -11,7 +11,7 @@ import org.testng.annotations.BeforeTest;
 import io.cucumber.testng.AbstractTestNGCucumberTests;
 import io.cucumber.testng.CucumberOptions;
 
-@CucumberOptions(	features = "src/test/resources/features", 
+@CucumberOptions(	features = "resources/features", 
 					glue = "com.framework.stepDefinitions")
 public class TestRunner extends AbstractTestNGCucumberTests{
 
@@ -24,7 +24,6 @@ public class TestRunner extends AbstractTestNGCucumberTests{
 		options.addArguments("--disable-notifications");
 	    driver = new ChromeDriver(options);
 	    driver.manage().window().maximize();
-	    driver.get("https://olx.co.id/#");
 	    driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
 	}
 	
