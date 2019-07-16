@@ -2,11 +2,16 @@ package com.framework.pageObjects;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class BasePage {
 	
 	protected WebDriver driver;
 	private final String urlHomePage = "https://olx.co.id";
+	
+	@FindBy(id = "topLoginLink")
+	private WebElement loginLink;
+	
 	
 	public BasePage(WebDriver webDriver) {
 		driver = webDriver;
@@ -26,6 +31,10 @@ public class BasePage {
 	
 	public void clickButton(WebElement buttonElement) {
 		buttonElement.click();
+	}
+	
+	public WebElement getLoginLinkElement() {
+		return loginLink;
 	}
 	
 }

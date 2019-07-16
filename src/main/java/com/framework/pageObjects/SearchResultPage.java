@@ -31,17 +31,17 @@ public class SearchResultPage extends BasePage{
 	
 	
 	
-	public class SearchResult{
+	public class VerifyPage{
 		
 		String cityValue, searchValue, breadcrumbValue;
 		
-		public SearchResult() {
+		public VerifyPage() {
 			this.cityValue = cityElement.getAttribute("value");
 			this.searchValue = searchBar.getAttribute("value");
 			this.breadcrumbValue = searchBreadcrumb.getText();
 		}
 		
-		public SearchResult(String city, String search) {
+		public VerifyPage(String city, String search) {
 			this.cityValue = city;
 			this.searchValue = search;
 			this.breadcrumbValue = "OLX - Cara Tepat Jual Cepat - "+search;
@@ -63,7 +63,7 @@ public class SearchResultPage extends BasePage{
 	        if (o == null || getClass() != o.getClass())
 	            return false;
 
-	        SearchResult expectedObject = (SearchResult) o;
+	        VerifyPage expectedObject = (VerifyPage) o;
 
 	        if (!cityValue.equals(expectedObject.cityValue))
 	            return false;
