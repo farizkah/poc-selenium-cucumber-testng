@@ -2,7 +2,8 @@ Feature: Search Product
   User want to search product using registered account
 
 	Background: Login as user
-		Given User is logged in with email "" and password "" 
+		Given User is logged in with email "bonekaomkecil@gmail.com" and password "1612199333"
+		Then User can see account profile page
 	
   @tag1
   Scenario: User can search item with search bar

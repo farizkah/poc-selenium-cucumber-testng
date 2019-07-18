@@ -5,7 +5,7 @@ Feature: Login - User
   @tag1
   Scenario: User can login succesfully to the website
     Given User is at homepage
-    When User is logged in with email "" and password ""
+    When User is logged in with email "bonekaomkecil@gmail.com" and password "1612199333"
     Then User can see account profile page
 
   #@tag2

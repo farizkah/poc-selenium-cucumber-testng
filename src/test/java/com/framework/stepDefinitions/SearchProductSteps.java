@@ -21,7 +21,7 @@ public class SearchProductSteps {
 	@Given("User is at homepage")
 	public void user_is_at_homepage() {
 		hp.navigateToHomePage();
-		hp.getDriver().manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		hp.getDriver().manage().timeouts().implicitlyWait(2000, TimeUnit.SECONDS);
 	}
 
 	@When("User search item {string} with city {string}")
